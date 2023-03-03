@@ -1,0 +1,9 @@
+.note-card-container {
+    align-content: center;
+    justify-content: center;
+}
+
+.note-card {
+    border: solid black 1px;
+    margin: 10px;
+}

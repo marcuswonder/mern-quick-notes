@@ -16,4 +16,13 @@ const noteSchema = new Schema({
     }
 )
 
+
+noteSchema.methods.addNote = async function (newNote) {
+    console.log(newNote)
+    const note = this
+    note.text = newNote.note
+    note.user = newNote.user
+    return note.save()
+}
+
 module.exports = mongoose.model('Note', noteSchema);
